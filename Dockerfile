@@ -7,7 +7,7 @@ WORKDIR /.
 # Copy the application files into the working directory
 COPY . /.
 
-ENV FLASK_APP=app.py
+ENV FLASK_APP=main.py
 
 
 EXPOSE 5000
