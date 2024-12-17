@@ -7,13 +7,14 @@ WORKDIR /.
 # Copy the application files into the working directory
 COPY . /.
 
-ENV FLASK_APP=main.py
-
-
-EXPOSE 5000
-
 # Install the application dependencies
 RUN pip install -r requirements.txt
 
+# Set environment variable for Flask app
+ENV FLASK_APP=main.py
+
+# Expose port 5000
+EXPOSE 5000
+
 # Define the entry point for the container
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]

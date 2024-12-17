@@ -30,7 +30,7 @@ if WVD is None:
             )
 
 # Define Flask app object, give template and static arguments.
-app = Flask(__name__, template_folder='templates', static_folder='static', static_url_path='/')
+app = Flask(__name__)
 
 # Create a secret key for logins
 app.secret_key = str(uuid.uuid4())
