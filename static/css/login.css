@@ -1,0 +1,40 @@
+main {
+    display: grid;
+}
+
+#login_form {
+    display: grid;
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+    grid-template-rows: auto auto auto auto auto auto;
+    width: 25%;
+    color: white;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 2%;
+    border-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2%;
+}
+
+#username_label, #username, #password_label, #password {
+    margin-bottom: 1%;
+    justify-self: center;
+}
+
+#username, #password {
+    width: 50%;
+}
+
+#register_buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1%;
+    width: 50%;
+    justify-self: center;
+}
+
+#error_message_holder {
+    display: none;
+}

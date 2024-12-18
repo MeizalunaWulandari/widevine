@@ -1,0 +1,75 @@
+main {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+h1 {
+    display: grid;
+    grid-auto-rows: auto;
+    justify-self: center;
+    color: white;
+}
+
+#decrypt_form {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    width: 50%;
+    justify-self: center;
+    border-style: solid;
+    padding: 1%;
+    border-radius: 2%;
+    border-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 3%;
+    color: white;
+}
+
+#index_pssh,
+#license_url,
+#headers,
+#json,
+#cookies,
+#data,
+#proxy{
+    resize: none; /* Prevent textarea from being resizable */
+    overflow: auto; /* Enable scrolling if content overflows */
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    margin: 1%;
+}
+
+#decrypt_button {
+    width: 25%;
+    justify-self: center;
+    margin-top: 2%;
+}
+
+#results {
+    display: none;
+    border-style: solid;
+    border-radius: 2%;
+    border-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 50%;
+    justify-self: center;
+    margin-bottom: 3%;
+}
+
+#keys_paragraph {
+    display: grid;
+    grid-template-rows: auto;
+    justify-self: center;
+    font-size: xx-large;
+    color: white;
+}
+
+#decrypt_results {
+    display: grid;
+    grid-template-rows: auto;
+    justify-self: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
